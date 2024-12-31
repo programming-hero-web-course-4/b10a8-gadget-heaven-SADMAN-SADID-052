@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 
 
 const getStoredList = () =>
@@ -39,6 +40,9 @@ const addToList = (id) =>
     const storedListStr = JSON.stringify(stortedList)
 
     localStorage.setItem('read-list',storedListStr)
+
+    toast.success(`${id} No. Product is Added to the Cart`)
+    return
 
    }
 }

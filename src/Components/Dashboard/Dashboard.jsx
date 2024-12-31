@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink, useLoaderData } from "react-router-dom";
+import { NavLink, useLoaderData, useNavigate} from "react-router-dom";
 import { getStoredList } from "../../utiliti/addTodb";
 import { getStoreList } from "../../utiliti/addWish";
 import Cart from "../Cart/Cart";
@@ -9,7 +9,9 @@ import toast, { Toaster } from "react-hot-toast";
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("cart");
   const [cartList, setCartList] = useState([]);
+  const [showModal, setShowModal] = useState(false);
   const [wishList, setWishList] = useState([]);
+  const navigate = useNavigate();
   const allProducts = useLoaderData();
 
   useEffect(() => {
@@ -41,8 +43,16 @@ const Dashboard = () => {
       toast.error("Cart is empty. Add items before purchasing!");
       return;
     }
-    toast.success("Congratulations on your purchase!");
-    setCartList([]); 
+    // toast.success("Congratulations on your purchase!");
+    setShowModal(true);
+    // setCartList([]); 
+  };
+
+  const handleModalClose = () => {
+    setShowModal(false); // Hide the modal
+    setCartList([]); // Clear the cart in state
+    // clearStoredList(); // Clear the stored cart in local storage
+    navigate('/') // Redirect to the homepage
   };
 
   return (
@@ -105,6 +115,27 @@ const Dashboard = () => {
             <Cart key={wish.product_id} cart={wish} />
           ))}
       </div>
+
+      {/* modal */}
+
+       {/* Modal */}
+       {showModal && (
+        <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-lg font-bold text-center">Congratulations!</h3>
+            <p className="mt-2 text-center">
+              Your purchase was successful! The total cost is{" "}
+              <span className="font-bold">${totalCartPrice}</span>.
+            </p>
+            <button
+              className="btn btn-primary mt-4 w-full"
+              onClick={handleModalClose}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
 
       <Helmet>
         <title>GadgetHaven - Dashboard</title>

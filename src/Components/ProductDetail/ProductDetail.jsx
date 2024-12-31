@@ -24,6 +24,7 @@ const ProductDetail = () => {
     // console.log(id)
 
     toast.success(`${product.product_title} is Added to the Cart`)
+    // return;
     
     
   };
