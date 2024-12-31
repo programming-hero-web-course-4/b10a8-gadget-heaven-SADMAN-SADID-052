@@ -49,10 +49,14 @@ const Dashboard = () => {
   };
 
   const handleModalClose = () => {
-    setShowModal(false); // Hide the modal
-    setCartList([]); // Clear the cart in state
-    // clearStoredList(); // Clear the stored cart in local storage
-    navigate('/') // Redirect to the homepage
+    setShowModal(false); 
+    setCartList([]);
+   
+    // navigate('/') 
+
+    setTimeout(() => {
+      navigate('/'); 
+    }, 1500);
   };
 
   return (
@@ -122,13 +126,18 @@ const Dashboard = () => {
        {showModal && (
         <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-lg font-bold text-center">Congratulations!</h3>
-            <p className="mt-2 text-center">
-              Your purchase was successful! The total cost is{" "}
-              <span className="font-bold">${totalCartPrice}</span>.
+
+            <img className="w-20 mx-auto" src="https://img.icons8.com/?size=128&id=VRkpt1PqIfsu&format=png" alt="" />
+            <p className="mt-2 text-center text-2xl font-bold border-b-2 p-4">
+              Payment Successfully
+             
             </p>
+
+            <p className="text-center mt-4">Thanks for purchasing.</p>
+
+            <p className="font-bold text-center mt-4">Total: ${totalCartPrice}</p>.
             <button
-              className="btn btn-primary mt-4 w-full"
+              className="btn btn-default mt-4 w-full rounded-full font-bold"
               onClick={handleModalClose}
             >
               Close
