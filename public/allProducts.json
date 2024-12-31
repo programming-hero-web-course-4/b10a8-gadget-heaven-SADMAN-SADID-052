@@ -1,0 +1,140 @@
+[
+    {
+      "product_id": "1",
+      "product_title": "UltraBook Pro",
+      "product_image": "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bWFjYm9vayUyMHBybyUyMDE2fGVufDB8fDB8fHww",
+      "category": "Laptops",
+      "price": 800,
+      "description": "A powerful ultrabook with a sleek design.",
+      "specification": ["Intel i7", "16GB RAM", "512GB SSD"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "2",
+      "product_title": "Smart Watch X",
+      "product_image": "https://img.freepik.com/premium-photo/new-smart-fitness-bracelets-with-blank-black-screen_298425-734.jpg?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+      "category": "Smart Watches",
+      "price": 200,
+      "description": "A smart watch with fitness tracking and notifications.",
+      "specification": ["Heart rate monitor", "GPS", "Water-resistant"],
+      "availability": true,
+      "rating": 4.0
+    },
+    {
+      "product_id": "3",
+      "product_title": "iPhone 13",
+      "product_image": "https://img.freepik.com/free-photo/elegant-smartphone-composition_23-2149437072.jpg?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+      "category": "iPhones",
+      "price": 999,
+      "description": "The latest iPhone with improved performance and camera.",
+      "specification": ["128GB Storage", "12MP Camera", "5G Enabled"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "4",
+      "product_title": "MacBook Air M1",
+      "product_image": "https://img.freepik.com/free-photo/laptop-with-blank-white-screen-books-eyeglasses-pencil-holders-paperclip-wooden-desk_23-2147979131.jpg?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+      "category": "MacBooks",
+      "price": 1200,
+      "description": "Lightweight laptop with Apple's M1 chip.",
+      "specification": ["Apple M1", "8GB RAM", "256GB SSD"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "5",
+      "product_title": "Portable Charger P",
+      "product_image": "https://img.freepik.com/free-photo/phone-mobile-connect-battery-power-bank_93675-129768.jpg?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+      "category": "Accessories",
+      "price": 59,
+      "description": "Compact and powerful portable charger.",
+      "specification": ["10000mAh", "Fast Charging", "Dual USB Ports"],
+      "availability": true,
+      "rating": 4.3
+    },
+
+    {
+        "product_id": "6",
+        "product_title": "Portable Charger P",
+        "product_image": "https://img.freepik.com/free-photo/phone-mobile-connect-battery-power-bank_93675-129768.jpg?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+        "category": "Accessories",
+        "price": 59,
+        "description": "Compact and powerful portable charger.",
+        "specification": ["10000mAh", "Fast Charging", "Dual USB Ports"],
+        "availability": true,
+        "rating": 4.3
+      },
+  
+
+    {
+      "product_id": "7",
+      "product_title": "USB-C Power Adapter",
+      "product_image": "https://img.freepik.com/free-photo/usb-charging-gadgets-blurred-background-room-close-up-concept-technology-everyday-life_169016-15480.jpg?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+      "category": "Accessories",
+      "price": 50,
+      "description": "Fast charging power adapter for laptops and phones.",
+      "specification": ["USB-C", "65W Power Output"],
+      "availability": true,
+      "rating": 4.1
+    },
+    {
+      "product_id": "8",
+      "product_title": "Gaming Laptop G",
+      "product_image": "https://img.freepik.com/free-photo/high-angle-gamer-playing-laptop_23-2149829167.jpg?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+      "category": "Laptops",
+      "price": 1400,
+      "description": "High-performance laptop designed for gaming.",
+      "specification": ["Intel i9", "32GB RAM", "1TB SSD", "RTX 3070"],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "9",
+      "product_title": "iPhone 12",
+      "product_image": "https://img.freepik.com/free-photo/elegant-smartphone-composition_23-2149437107.jpg?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+      "category": "iPhones",
+      "price": 750,
+      "description": "The iPhone with all-day battery and a dual-camera system.",
+      "specification": ["64GB Storage", "12MP Dual Camera", "5G Enabled"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "10",
+      "product_title": "Smart Watch S2",
+      "product_image": "https://img.freepik.com/premium-photo/red-smart-watch-isolated-white-background_298425-762.jpg?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+      "category": "Smart Watches",
+      "price": 250,
+      "description": "Smart watch with health monitoring and app notifications.",
+      "specification": ["Heart Rate Monitor", "GPS", "Music Storage"],
+      "availability": false,
+      "rating": 4.4
+    },
+    {
+      "product_id": "11",
+      "product_title": "Android Phone Z",
+      "product_image": "https://img.freepik.com/free-photo/smartphone-device-with-minimalist-monochrome-background_23-2150763310.jpg?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+      "category": "Phones",
+      "price": 550,
+      "description": "Affordable Android smartphone with great features.",
+      "specification": ["64GB Storage", "Triple Camera", "4G Enabled"],
+      "availability": true,
+      "rating": 4.2
+    },
+
+    {
+        "product_id": "12",
+        "product_title": "Portable Charger Q",
+        "product_image": "https://img.freepik.com/free-photo/phone-mobile-connect-battery-power-bank_93675-129768.jpg?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+        "category": "Accessories",
+        "price": 50,
+        "description": "Compact and powerful portable charger.",
+        "specification": ["10000mAh", "Fast Charging", "Dual USB Ports"],
+        "availability": true,
+        "rating": 4.3
+      }
+  
+  ]
+  
