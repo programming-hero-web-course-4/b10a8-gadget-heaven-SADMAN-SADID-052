@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import aboutimg from '../../assets/about.webp'
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 const AboutUs = () => {
   useEffect(() => {
     document.title = 'About Us - GadgetHaven';
@@ -109,6 +110,12 @@ const AboutUs = () => {
           </Link>
         </div>
       </section>
+
+      <Helmet>
+        <title>GadgetHaven - AboutUs</title>
+      </Helmet>
+
+         
 
 
     </div>
