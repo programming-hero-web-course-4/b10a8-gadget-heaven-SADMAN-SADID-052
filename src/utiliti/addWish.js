@@ -27,7 +27,8 @@ const addWishList = (id) =>
 
    if(stortedList.includes(id))
    {
-    console.log(id,'ready')
+    // console.log(id,'ready')
+    al
    }
 
    else{

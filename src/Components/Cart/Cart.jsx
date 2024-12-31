@@ -14,9 +14,9 @@ const Cart = ({cart}) => {
 
     const {product_title,product_id,price,product_image,specification} = cart || {}
     return (
-        <div>
+        <div className='max-w-4xl mx-auto'> 
 
-            <div className='bg-slate-300 mt-3 p-3 rounded-2xl flex items-center gap-6'>
+            <div className='bg-[#FFFFFF] mt-3 p-3 rounded-2xl flex items-center gap-6 border-2'>
                 <div>
                 <img className='w-36 rounded-3xl' src={product_image} alt="" />
                 </div>

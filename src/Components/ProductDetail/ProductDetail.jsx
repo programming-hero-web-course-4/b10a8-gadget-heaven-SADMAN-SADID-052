@@ -2,7 +2,7 @@
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; 
 
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { FaRegStar } from 'react-icons/fa';
 import { GiSelfLove } from 'react-icons/gi';
@@ -13,6 +13,7 @@ import { addWishList } from '../../utiliti/addWish';
 // import { ToastContainer } from 'react-toastify';
 
 const ProductDetail = () => {
+  const [wishlistDisabled, setWishlistDisabled] = useState(false);
   const { product_id } = useParams();
   const data = useLoaderData();
 
@@ -30,7 +31,10 @@ const ProductDetail = () => {
   };
 
   const handleWish = (id) => {
+    if (wishlistDisabled) return;
     addWishList(id);
+
+    setWishlistDisabled(true); 
    
     toast.success(`${product.product_title} has been added to your wishlist!`);
   };
@@ -102,7 +106,9 @@ const ProductDetail = () => {
 
               <button onClick={() => handleWish(product_id)} className="btn btn-ghost btn-circle">
                 <div className="indicator">
-                  <GiSelfLove className="text-xl h-7 w-7 bg-white text-black rounded-full p-1" />
+                  <GiSelfLove   className={`text-xl h-7 w-7 bg-white ${
+                      wishlistDisabled ? "text-gray-400" : "text-black"
+                    } rounded-full p-1`} />
                 </div>
               </button>
             </div>

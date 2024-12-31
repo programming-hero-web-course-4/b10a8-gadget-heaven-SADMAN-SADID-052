@@ -90,18 +90,31 @@ const Dashboard = () => {
       </div>
 
       {/* Tab Content */}
-      <div className="flex justify-between mt-7">
+      <div className="flex justify-between mt-7 max-w-4xl mx-auto">
         <h4 className="font-bold">
           {activeTab === "cart" ? "Cart" : "WishList"}
         </h4>
         {activeTab === "cart" && (
           <div className="flex items-center gap-5">
             <h4 className="font-bold text-xl">Total cost: ${totalCartPrice}</h4>
-            <button className="btn btn-outline" onClick={sortCartByPrice}>
-              Sort by Price
+            <button className="btn btn-outline btn-secondary rounded-full" onClick={sortCartByPrice}>
+              
+
+              <p className="flex items-center gap-2">
+                
+                <p className="text-[#9538E2] font-bold text-xl hover:text-white">
+              
+                
+                
+                Sort by Price</p>
+
+                <img className="w-5" src="https://img.icons8.com/?size=160&id=h5alLZ4IUga5&format=png" alt="" />
+              </p>
+             
+              
             </button>
             <button
-              className="btn btn-outline"
+              className="btn btn-outline rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ... text-white"
               onClick={handlePurchase}
               disabled={cartList.length === 0}
             >
