@@ -37,6 +37,7 @@ const Cart = ({cart}) => {
                     <div>
                     <button onClick={()=> handeleDelete(product_id)} className='text-red-600 text-2xl'><RxCrossCircled /></button>
                     </div>
+                    
                 </div>
             </div>
             

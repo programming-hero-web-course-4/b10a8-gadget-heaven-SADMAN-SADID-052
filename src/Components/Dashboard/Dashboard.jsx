@@ -76,7 +76,7 @@ const Dashboard = () => {
             }`}
             onClick={() => setActiveTab("cart")}
           >
-            Cart: {cartList.length}
+            Cart:  ${totalCartPrice}
           </button>
           <button
             className={`btn btn-outline rounded-2xl ml-2 px-4 ${
