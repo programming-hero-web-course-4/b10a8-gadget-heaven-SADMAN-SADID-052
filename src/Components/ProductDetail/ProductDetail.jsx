@@ -4,7 +4,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
-import { FaRegStar } from 'react-icons/fa';
+import { FaRegStar, FaStar } from 'react-icons/fa';
+import ReactRating from 'react-rating';
 import { GiSelfLove } from 'react-icons/gi';
 import { addToList } from '../../utiliti/addTodb';
 import { addWishList } from '../../utiliti/addWish';
@@ -25,7 +26,7 @@ const ProductDetail = () => {
     // console.log(id)
 
     toast.success(`${product.product_title} is Added to the Cart`)
-    // return;
+    return;
     
     
   };
@@ -33,7 +34,7 @@ const ProductDetail = () => {
   const handleWish = (id) => {
     if (wishlistDisabled) return;
     addWishList(id);
-
+    
     setWishlistDisabled(true); 
    
     toast.success(`${product.product_title} has been added to your wishlist!`);
@@ -65,7 +66,7 @@ const ProductDetail = () => {
               {`${product.availability ? 'In Stock' : 'Not Available'}`}
             </p>
             <p className="text-slate-500 mb-4 mt-4">{product.description}</p>
-            <h4 className="mt-3 mb-3">Specification</h4>
+            <h4 className="mt-3 mb-3 font-bold">Specification</h4>
 
             <ol className="font-semibold text-slate-500">
               {product.specification.map((spec, index) => (
@@ -73,14 +74,25 @@ const ProductDetail = () => {
               ))}
             </ol>
             <h5 className="font-bold">Rating:</h5>
-            <p className="flex items-center gap-2">
+            {/* <p className="flex items-center gap-2">
               <FaRegStar className="text-orange-500" />
               <FaRegStar className="text-orange-500" />
               <FaRegStar className="text-orange-500" />
               <FaRegStar className="text-orange-500" />
               <FaRegStar className="" />
-              <span className="bg-gray-300 p-1 rounded-xl">{product.rating}</span>
-            </p>
+
+
+             
+            </p> */}
+                <ReactRating
+              initialRating={product.rating}
+              readonly
+              emptySymbol={<FaRegStar className="text-gray-400 text-lg" />}
+              fullSymbol={<FaStar className="text-orange-500 text-lg" />}
+            />
+            
+
+            <span className="bg-gray-300 p-1 rounded-xl">{product.rating}</span>
 
             <div className="flex mt-5">
               <button
