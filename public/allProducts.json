@@ -57,8 +57,8 @@
 
     {
         "product_id": "6",
-        "product_title": "Portable Charger P",
-        "product_image": "https://img.freepik.com/free-photo/phone-mobile-connect-battery-power-bank_93675-129768.jpg?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+        "product_title": "Portable Charger TY",
+        "product_image": "https://img.freepik.com/premium-photo/power-bank-electronic-cigarette-yellow-backgroung_736440-59.jpg?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
         "category": "Accessories",
         "price": 59,
         "description": "Compact and powerful portable charger.",
@@ -109,7 +109,7 @@
       "price": 250,
       "description": "Smart watch with health monitoring and app notifications.",
       "specification": ["Heart Rate Monitor", "GPS", "Music Storage"],
-      "availability": false,
+      "availability": true,
       "rating": 4.4
     },
     {
@@ -126,14 +126,108 @@
 
     {
         "product_id": "12",
-        "product_title": "Portable Charger Q",
-        "product_image": "https://img.freepik.com/free-photo/phone-mobile-connect-battery-power-bank_93675-129768.jpg?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+        "product_title": "Sony Portable x",
+        "product_image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-hard-drive-illustration_23-2149363190.jpg?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
         "category": "Accessories",
         "price": 50,
         "description": "Compact and powerful portable charger.",
         "specification": ["10000mAh", "Fast Charging", "Dual USB Ports"],
         "availability": true,
         "rating": 4.3
+      },
+
+      {
+        "product_id": "13",
+        "product_title": "Creative StudioBook",
+        "product_image": "https://img.freepik.com/free-photo/open-laptop-with-stationeries-office-wooden-desk_23-2147924213.jpg?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+        "category": "Laptops",
+        "price": 1200,
+        "description": "Ideal for graphic designers and video editors.",
+        "specification": ["Intel i7", "16GB RAM", "1TB SSD", "4K Display"],
+        "availability": true,
+        "rating": 4.6
+      },
+
+      {
+        "product_id": "14",
+        "product_title": "TravelLite X",
+        "product_image": "https://img.freepik.com/free-photo/gracious-bellboy-holds-laptop_482257-78379.jpg?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+        "category": "Laptops",
+        "price": 650,
+        "description": "Compact and lightweight laptop for frequent travelers.",
+        "specification": ["Intel i5", "8GB RAM", "512GB SSD"],
+        "availability": true,
+        "rating": 4.3
+      },
+
+      {
+        "product_id": "15",
+        "product_title": "BusinessPro Elite",
+        "product_image": "https://img.freepik.com/free-photo/businessman-with-laptop_23-2147984990.jpg?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+        "category": "Laptops",
+        "price": 1100,
+        "description": "Built for productivity with enhanced security features.",
+        "specification": ["Intel i7", "16GB RAM", "512GB SSD", "Fingerprint Scanner"],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "16",
+        "product_title": "Gaming Beast X",
+        "product_image": "https://img.freepik.com/premium-photo/ultimate-laptop-dominating-play_431161-28472.jpg?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+        "category": "Laptops",
+        "price": 1500,
+        "description": "High-performance gaming laptop with RGB keyboard.",
+        "specification": ["Intel i9", "32GB RAM", "1TB SSD", "RTX 3080"],
+        "availability": true,
+        "rating": 4.8
+      },
+
+      {
+        "product_id": "17",
+        "product_title": "Galaxy S23 Ultra",
+        "product_image": "https://img.freepik.com/premium-photo/new-smartphone-balancing-with-podium_23-2150296471.jpg?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+        "category": "Phones",
+        "price": 1200,
+        "description": "Premium flagship with cutting-edge features.",
+        "specification": ["Snapdragon 8 Gen 2", "12GB RAM", "256GB Storage", "108MP Camera"],
+        "availability": true,
+        "rating": 4.8
+      },
+
+      {
+        "product_id": "18",
+        "product_title": "Pixel 8 Pro",
+        "product_image": "https://img.freepik.com/premium-photo/mobile-front-back-side-black-background_187299-27985.jpg?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+        "category": "Phones",
+        "price": 1000,
+        "description": "Google's latest smartphone with AI-powered camera.",
+        "specification": ["Tensor G3", "12GB RAM", "512GB Storage", "50MP Camera"],
+        "availability": true,
+        "rating": 4.7
+      },
+
+      {
+        "product_id": "19",
+        "product_title": "MacBook Air M2",
+        "product_image": "https://img.freepik.com/premium-photo/front-view-laptop-is-work-table-concrete-background-clipping-path-inside_264197-18054.jpg?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+        "category": "MacBooks",
+        "price": 1200,
+        "description": "Lightweight and powerful MacBook with the latest M2 chip.",
+        "specification": ["Apple M2 Chip", "8GB RAM", "256GB SSD", "13.6-inch Liquid Retina Display"],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "20",
+        "product_title": "MacBook Pro 16-inch M3 Pro",
+        "product_image": "https://img.freepik.com/free-photo/desk-arrangement-with-ssd-laptop-flat-lay_23-2149328279.jpg?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+        "category": "MacBooks",
+        "price": 2800,
+        "description": "Professional-grade MacBook with unmatched performance.",
+        "specification": ["Apple M3 Pro Chip", "16GB RAM", "1TB SSD", "16-inch Liquid Retina XDR Display"],
+        "availability": true,
+        "rating": 4.9
       }
   
   ]
