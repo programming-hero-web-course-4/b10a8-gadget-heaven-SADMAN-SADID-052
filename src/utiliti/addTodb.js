@@ -30,7 +30,7 @@ const addToList = (id) =>
    {
     console.log(id,'ready')
 
-    alert('already exist')
+    toast.error(`This product already exists in the dashboard`)
     return;
    }
 
@@ -42,7 +42,7 @@ const addToList = (id) =>
     localStorage.setItem('read-list',storedListStr)
 
     toast.success(`${id} No. Product is Added to the Cart`)
-    return
+    return;
 
    }
 }
