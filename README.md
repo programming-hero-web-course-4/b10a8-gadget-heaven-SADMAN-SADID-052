@@ -2,7 +2,7 @@
 
 
 
- Check out the live version of the project here: [Live URL]()
+ Check out the live version of the project here: [Live URL](https://kaleidoscopic-starburst-d19f08.netlify.app/)
 
 ### React Fundamental Concepts Used :
 - **Components**
